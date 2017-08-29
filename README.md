@@ -39,7 +39,7 @@ Compatibility notes:
 
 Tracking:
 
-  * Command: rm-log-file-rotations
+  * Command: rm-compressed-files
   * Version: 2.0.0
   * Created: 2013-12-09
   * Updated: 2017-08-29
