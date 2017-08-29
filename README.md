@@ -1,4 +1,4 @@
-# Remove log file rotations
+# Remove compressed files
 
 This script removes compressed files and related kinds of archive files.
 
