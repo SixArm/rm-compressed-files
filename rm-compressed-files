@@ -4,6 +4,10 @@ set -euf
 ##
 # This script removes compressed files and related kinds of archive files.
 #
+# The searches by file name extension:
+#
+#   * .bz, .bz2, .bzip, .gz, .tar, .tgz, .zip, .7zip.
+# 
 # Syntax:
 # 
 #     rm-compressed-files [dir]
@@ -16,10 +20,6 @@ set -euf
 #
 #     rm-compressed-files /foo/goo
 #
-# The implemenation searches by file name extension:
-#
-#   * .bz, .bz2, .bzip, .gz, .tar, .tgz, .zip, .7zip.
-# 
 # Compatibility notes:
 #
 #   * We prefer to be more compatible rather than system-specific.

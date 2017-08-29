@@ -2,6 +2,10 @@
 
 This script removes compressed files and related kinds of archive files.
 
+This searches by file name extension:
+
+  * .bz, .bz2, .bzip, .gz, .tar, .tgz, .zip, .7zip.
+
 Syntax:
 
     rm-compressed-files [dir]
@@ -14,7 +18,7 @@ Example to do a specific directory:
 
     rm-compressed-files /foo/goo
 
-The implemenation searches by file name extension:
+This searches by file name extension:
 
   * .bz, .bz2, .bzip, .gz, .tar, .tgz, .zip, .7zip.
 
