@@ -46,7 +46,7 @@ We prefer to be more compatible rather than system-specific.
 ## Tracking
 
   * Command: rm-compressed-files
-  * Version: 2.0.0
+  * Version: 3.0.0
   * Created: 2013-12-09
   * Updated: 2017-08-29
   * License: GPL
