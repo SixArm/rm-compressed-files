@@ -42,11 +42,11 @@ set -euf
 # ## Tracking
 # 
 #   * Command: rm-compressed-files
-#   * Version: 2.0.0
+#   * Version: 3.0.0
 #   * Created: 2013-12-09
 #   * Updated: 2017-08-29
 #   * License: GPL
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 
-find "${1:-.}" \( -name "*.[Bb][Zz]" -o -name "*.[Bb][Zz]2" -o -name "*.[Bb][Zz][Ii][Pp]" -o -name "*.[Gg][Zz]" -o -name "*.[Tt][Aa][Rr]" -o -name "*.[Tt][Gg][Zz]" -o -name "*.[Zz][Ii][Pp]" -o -name "*.7[Zz][Ii][Pp]" \) -exec rm {} \;
+find "${1:-.}" \( -name "*.[Bb][Zz]" -o -name "*.[Bb][Zz]2" -o -name "*.[Bb][Zz][Ii][Pp]" -o -name "*.[Gg][Zz]" -o -name "*.[Tt][Aa][Rr]" -o -name "*.[Tt][Gg][Zz]" -o -name "*.[Zz][Ii][Pp]" -o -name "*.7[Zz][Ii][Pp]" \) -type f -exec rm {} \;
