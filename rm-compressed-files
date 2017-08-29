@@ -20,9 +20,9 @@ set -euf
 #
 #     rm-compressed-files /foo/goo
 #
-# Compatibility notes:
+# ## Compatibility notes
 #
-#   * We prefer to be more compatible rather than system-specific.
+#  We prefer to be more compatible rather than system-specific.
 #
 #   * To delete files, we prefer `-exec rm` vs. `-delete`.
 #     The former is more compatible, the latter is faster.
@@ -39,7 +39,7 @@ set -euf
 #     For example, the code has separate name matching 
 #     for `.bz` and `.bz2`, even though we could combine these.
 #
-# Tracking:
+# ## Tracking
 # 
 #   * Command: rm-compressed-files
 #   * Version: 2.0.0

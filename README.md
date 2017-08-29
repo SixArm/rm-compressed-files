@@ -22,9 +22,10 @@ This searches by file name extension:
 
   * .bz, .bz2, .bzip, .gz, .tar, .tgz, .zip, .7zip.
 
-Compatibility notes:
 
-  * We prefer to be more compatible rather than system-specific.
+## Compatibility notes
+
+We prefer to be more compatible rather than system-specific.
 
   * To delete files, we prefer `-exec rm` vs. `-delete`.
     The former is more compatible, the latter is faster.
@@ -41,7 +42,8 @@ Compatibility notes:
     For example, the code has separate name matching 
     for `.bz` and `.bz2`, even though we could combine these.
 
-Tracking:
+
+## Tracking
 
   * Command: rm-compressed-files
   * Version: 2.0.0
