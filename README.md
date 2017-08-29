@@ -16,7 +16,7 @@ Example to do a specific directory:
 
 The implemenation searches by file name extension:
 
-  * .bz, .bz2, .bzip, .gz, .tar, .tgz, .zip.
+  * .bz, .bz2, .bzip, .gz, .tar, .tgz, .zip, .7zip.
 
 Compatibility notes:
 
