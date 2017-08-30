@@ -26,6 +26,16 @@ This searches by file name extension:
   * .bz, .bz2, .bzip, .gz, .tar, .tgz, .zip, .7zip.
 
 
+## Related
+
+These scripts are for related purposes:
+
+  * [rm-compressed-files](https://github.com/SixArm/rm-compressed-files)
+  * [rm-datestamped-files](https://github.com/SixArm/rm-datestamped-files)
+  * [rm-numbered-files](https://github.com/SixArm/rm-numbered-files)
+  * [rm-rotated-files](https://github.com/SixArm/rm-rotated-files)
+
+
 ## Compatibility notes
 
 We prefer to be more compatible rather than system-specific.
@@ -44,16 +54,6 @@ We prefer to be more compatible rather than system-specific.
   * We prefer the code to be more DAMP than DRY.
     For example, the code has separate name matching 
     for `.bz` and `.bz2`, even though we could combine these.
-
-
-## Related
-
-These scripts are for related purposes:
-
-  * [rm-compressed-files](https://github.com/SixArm/rm-compressed-files)
-  * [rm-datestamped-files](https://github.com/SixArm/rm-datestamped-files)
-  * [rm-numbered-files](https://github.com/SixArm/rm-numbered-files)
-  * [rm-rotated-files](https://github.com/SixArm/rm-rotated-files)
 
 
 ## Tracking
