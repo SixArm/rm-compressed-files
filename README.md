@@ -46,6 +46,16 @@ We prefer to be more compatible rather than system-specific.
     for `.bz` and `.bz2`, even though we could combine these.
 
 
+## Related
+
+These scripts are for related purposes:
+
+  * [rm-compressed-files](https://github.com/SixArm/rm-compressed-files)
+  * [rm-datestamped-files](https://github.com/SixArm/rm-datestamped-files)
+  * [rm-numbered-files](https://github.com/SixArm/rm-numbered-files)
+  * [rm-rotated-files](https://github.com/SixArm/rm-rotated-files)
+
+
 ## Tracking
 
   * Command: rm-compressed-files
