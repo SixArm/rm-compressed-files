@@ -4,15 +4,15 @@ This script removes compressed files and related kinds of archive files.
 
 Syntax:
 
-    rm-compressed-files [dir]
+    $ rm-compressed-files [dir]
 
 Example to do the current directory:
 
-    rm-compressed-files
+    $ rm-compressed-files
 
 Example to do a specific directory:
 
-    rm-compressed-files /foo/goo
+    $ rm-compressed-files /foo/goo
 
 This searches by file name extension:
 
@@ -31,8 +31,11 @@ This searches by file name extension:
 These scripts are for related purposes:
 
   * [rm-compressed-files](https://github.com/SixArm/rm-compressed-files)
-  * [rm-datestamped-files](https://github.com/SixArm/rm-datestamped-files)
+
+  * [rm-dated-files](https://github.com/SixArm/rm-dated-files)
+  
   * [rm-numbered-files](https://github.com/SixArm/rm-numbered-files)
+  
   * [rm-rotated-files](https://github.com/SixArm/rm-rotated-files)
 
 
@@ -59,9 +62,11 @@ We prefer to be more compatible rather than system-specific.
 ## Tracking
 
   * Command: rm-compressed-files
-  * Version: 3.0.0
+  * Website: http://sixarm.com/rm-compressed-files
+  * Cloning: https://github.com/sixarm/rm-compressed-files
+  * Version: 4.0.0
   * Created: 2013-12-09
-  * Updated: 2017-08-29
+  * Updated: 2019-01-01
   * License: GPL
   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
-
+  * Tracker: 9c5b1940fec3ac49b828a9a8d2d2014b
