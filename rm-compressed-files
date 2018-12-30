@@ -6,15 +6,15 @@ set -euf
 #
 # Syntax:
 # 
-#     rm-compressed-files [dir]
+#     $ rm-compressed-files [dir]
 # 
 # Example to do the current directory:
 # 
-#     rm-compressed-files
+#     $ rm-compressed-files
 # 
 # Example to do a specific directory:
 #
-#     rm-compressed-files /foo/goo
+#     $ rm-compressed-files /foo/goo
 #
 # ## Which files?
 #
