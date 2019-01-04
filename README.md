@@ -34,7 +34,13 @@ This searches by file name extension:
 
 This searches by file name extension:
 
-  * .bz, .bz2, .bzip, .gz, .tar, .tgz, .zip, .7zip.
+  * .bz, .bz2, .bzip
+
+  * .gz, .tgz
+
+  * .tar, .tar.xy, .tar.lz
+
+  * .zip, .7zip
 
 
 ## Related
@@ -75,9 +81,9 @@ We prefer to be more compatible rather than system-specific.
   * Command: rm-compressed-files
   * Website: http://sixarm.com/rm-compressed-files
   * Cloning: https://github.com/sixarm/rm-compressed-files
-  * Version: 4.0.0
+  * Version: 4.1.0
   * Created: 2013-12-09
-  * Updated: 2019-01-01
+  * Updated: 2019-01-04
   * License: GPL
   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
   * Tracker: 9c5b1940fec3ac49b828a9a8d2d2014b

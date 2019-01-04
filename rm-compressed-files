@@ -20,8 +20,13 @@ set -euf
 #
 # This searches by file name extension:
 #
-#   * .bz, .bz2, .bzip, .gz, .tar, .tgz, .zip, .7zip.
-# 
+#   * .bz, .bz2, .bzip
+#
+#   * .gz, .tgz
+#
+#   * .tar, .tar.xy, .tar.lz
+#
+#   * .zip, .7zip
 #
 # ## Compatibility notes
 #
@@ -47,12 +52,12 @@ set -euf
 #   * Command: rm-compressed-files
 #   * Website: http://sixarm.com/rm-compressed-files
 #   * Cloning: https://github.com/sixarm/rm-compressed-files
-#   * Version: 3.0.0
+#   * Version: 4.1.0
 #   * Created: 2013-12-09
-#   * Updated: 2017-08-29
+#   * Updated: 2019-01-04
 #   * License: GPL
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 #   * Tracker: 9c5b1940fec3ac49b828a9a8d2d2014b
 ##
 
-find "${1:-.}" \( -name "*.[Bb][Zz]" -o -name "*.[Bb][Zz]2" -o -name "*.[Bb][Zz][Ii][Pp]" -o -name "*.[Gg][Zz]" -o -name "*.[Tt][Aa][Rr]" -o -name "*.[Tt][Gg][Zz]" -o -name "*.[Zz][Ii][Pp]" -o -name "*.7[Zz][Ii][Pp]" \) -type f -exec rm {} \;
+find "${1:-.}" \( -name "*.[Bb][Zz]" -o -name "*.[Bb][Zz]2" -o -name "*.[Bb][Zz][Ii][Pp]" -o -name "*.[Gg][Zz]" -o -name "*.[Tt][Aa][Rr]" -o -name "*.[Tt][Aa][Rr].[LlXx][Zz]" -o -name "*.[Tt][Gg][Zz]" -o -name "*.[Zz][Ii][Pp]" -o -name "*.7[Zz][Ii][Pp]" \) -type f -exec rm {} \;
