@@ -5,13 +5,13 @@ set -euf
 # This script removes compressed files and related kinds of archive files.
 #
 # Syntax:
-# 
+#
 #     $ rm-compressed-files [dir]
-# 
+#
 # Example to do the current directory:
-# 
+#
 #     $ rm-compressed-files
-# 
+#
 # Example to do a specific directory:
 #
 #     $ rm-compressed-files /foo/goo
@@ -44,20 +44,33 @@ set -euf
 #   * We prefer POSIX code vs. shell-specific code.
 #
 #   * We prefer the code to be more DAMP than DRY.
-#     For example, the code has separate name matching 
+#     For example, the code has separate name matching
 #     for `.bz` and `.bz2`, even though we could combine these.
 #
 # ## Tracking
-# 
+#
 #   * Command: rm-compressed-files
 #   * Website: http://sixarm.com/rm-compressed-files
 #   * Cloning: https://github.com/sixarm/rm-compressed-files
-#   * Version: 4.1.0
+#   * Version: 4.1.1
 #   * Created: 2013-12-09
-#   * Updated: 2019-01-04
+#   * Updated: 2019-09-08
 #   * License: GPL
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 #   * Tracker: 9c5b1940fec3ac49b828a9a8d2d2014b
 ##
 
-find "${1:-.}" \( -name "*.[Bb][Zz]" -o -name "*.[Bb][Zz]2" -o -name "*.[Bb][Zz][Ii][Pp]" -o -name "*.[Gg][Zz]" -o -name "*.[Tt][Aa][Rr]" -o -name "*.[Tt][Aa][Rr].[LlXx][Zz]" -o -name "*.[Tt][Gg][Zz]" -o -name "*.[Zz][Ii][Pp]" -o -name "*.7[Zz][Ii][Pp]" \) -type f -exec rm {} \;
+find "${1:-.}" \
+     -type f \
+     \( \
+     -name "*.[Bb][Zz]" -o \
+     -name "*.[Bb][Zz]2" -o \
+     -name "*.[Bb][Zz][Ii][Pp]" -o \
+     -name "*.[Gg][Zz]" -o \
+     -name "*.[Tt][Aa][Rr]" -o \
+     -name "*.[Tt][Aa][Rr].[LlXx][Zz]" -o \
+     -name "*.[Tt][Gg][Zz]" -o \
+     -name "*.[Zz][Ii][Pp]" -o \
+     -name "*.7[Zz][Ii][Pp]" \
+     \) \
+     -exec rm {} \;
